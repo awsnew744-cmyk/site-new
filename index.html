@@ -1,0 +1,395 @@
+<!DOCTYPE html><html class="" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Aguia Repasses</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#cbe7ef",
+                        "surface-container": "#e5eeff",
+                        "on-primary-fixed": "#031f25",
+                        "background": "#f8f9ff",
+                        "secondary-container": "#00e3fd",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9ff",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#42484a",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "primary": "#001519",
+                        "secondary": "#006875",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#cbdbf5",
+                        "inverse-primary": "#b0cbd3",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary-fixed-dim": "#b0cbd3",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "tertiary-container": "#cba72f",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-tint": "#496269",
+                        "on-tertiary-container": "#4e3d00",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-background": "#0b1c30",
+                        "primary-container": "#0f2a30",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#d3e4fe",
+                        "secondary-fixed-dim": "#00daf3",
+                        "outline-variant": "#c2c7c9",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#314b51",
+                        "outline": "#72787a",
+                        "on-secondary-fixed": "#001f24",
+                        "inverse-surface": "#213145",
+                        "on-surface": "#0b1c30",
+                        "tertiary": "#735c00",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#779299",
+                        "on-secondary-container": "#00616d",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#9cf0ff",
+                        "surface": "#f8f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "md": "24px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "label-sm": ["JetBrains Mono"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Hanken Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface-container-lowest border-b border-outline-variant z-50">
+<div class="flex justify-between items-center px-gutter max-w-[1280px] mx-auto h-20">
+<div class="flex items-center gap-3">
+<img alt="Aguia Repasses Logo" class="h-10 w-auto object-contain" data-alt="A clean, modern logo featuring a stylized eagle head in navy blue and silver, representing authority and speed, suitable for a professional car dealership brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-1bjXKxo1SZnC8JhyyO1X49jmO5XQ1oy1ybo1B1sw_5iyeU4ItR7-zOB-K3Ae-SjUYA34Bxdx-hBYwfsvcHEta1QofC9mJFKQWUOGSQsWEVGhBFVQRdRG2H5WT4F0tA3_e0JYLOn9RG6MfC2QDoWX_vw8A12_Fuq_zIsc_Y3ftrGFRXDADDj0mp6OxsgYvGkKGfKdarYFME3KaxFT5OxbUV9oJ8IbTGWAfBajRlnERmRco1VhWcXtVQ">
+<span class="text-headline-md font-bold text-primary tracking-tight">Aguia Repasses</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary border-b-2 border-secondary font-semibold pb-1 text-body-md" href="#estoque">Estoque</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-medium text-body-md" href="https://wa.me/+554192858336">Venda seu Carro</a>
+</nav>
+<div class="flex items-center gap-6">
+<a class="hidden lg:block font-label-md text-label-md text-secondary hover:underline" href="https://wa.me/+554192858336" rel="noopener noreferrer" target="_blank">(41) 9285-8336</a>
+<button class="text-on-surface-variant hover:bg-surface-container transition-colors duration-200 p-2.5 rounded-full">
+<span class="material-symbols-outlined">directions_car</span>
+</button>
+<button class="text-on-surface-variant hover:bg-surface-container transition-colors duration-200 p-2.5 rounded-full md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[640px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Pátio de carros populares" class="w-full h-full object-cover" data-alt="A wide, high-quality photograph of a bustling car dealership lot filled with popular Brazilian compact cars like Volkswagen Gol, Chevrolet Onix, and Hyundai HB20. The scene is bathed in bright, clear daylight, conveying a professional, trustworthy, and high-volume sales environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4QT-K2bp3pDKxryuRHTtR6GYd9RyihCIeznMJI5FyfYUJGALEs1ThWyQg5K43SOpYgaWoU-y-40NHSpdO_hlrSG0Wjc3HLCVb4xQwSXz9atiJhg17-CGt81Nb_IshA3o4YuzpbsYzBtOSrm7XvdW-ilMCwASfaMqTHqYmSAC7RTQkv5fD-IVnJjqtSSQk7fZ-k7k-uC8H7MmO1nq0IjWtqd6FPG2_vBFPBNMJ1j0rloK57wjaXkWJ2A">
+<div class="absolute inset-0 bg-primary/80"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-gutter w-full grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-7 text-center md:text-left">
+<h1 class="text-[36px] md:text-[56px] leading-[1.1] font-bold text-on-primary mb-6 tracking-tight">
+                    Veículos com Procedência Garantida
+                </h1>
+<p class="text-body-lg text-outline-variant mb-10 max-w-lg">
+                    Encontre o seu próximo carro com a segurança e a transparência que você merece. Repasses de qualidade com os melhores preços do mercado.
+                </p>
+<a class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-10 py-5 rounded-lg font-bold text-body-md transition-all duration-300 shadow-xl inline-block" href="https://chat.whatsapp.com/FXFo03n8ZCLBUASq3CZSWO?s=sw&amp;p=a&amp;ilr=0" rel="noopener noreferrer" target="_blank">ENTRE NO NOSSO GRUPO DO WHATSAPP</a>
+</div>
+<div class="md:col-span-5 flex justify-center md:justify-end">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-2xl border border-outline-variant/30 max-w-xs flex flex-col items-center text-center">
+<img alt="Selo CBRAV" class="w-32 h-32 mb-6 object-contain" data-alt="A distinctive, professional verification badge featuring a forest green background, a thin gold border, and a bold white checkmark. The text 'VERIFICADO CBRAV' is prominent, conveying ultimate trust and quality assurance in a corporate modern style." src="https://paranarepassesveiculos.com.br/wp-content/uploads/2023/10/CBR_Logo-Selo-CBRAV-corrigido-LW.png">
+<h3 class="text-headline-sm font-bold text-primary mb-3">Verificado CBRAV</h3>
+<p class="text-body-sm text-on-surface-variant leading-relaxed">Estamos orgulhosos de ser uma empresa verificada pela CBRAV, a Central Brasileira dos Repassadores Automotivos Verificados.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vitrine de Carros -->
+<section class="py-xl px-gutter max-w-[1280px] mx-auto" id="estoque">
+<div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-md">
+<div>
+<h2 class="text-[32px] font-bold text-primary tracking-tight">Destaques da Semana</h2>
+<p class="text-body-md text-on-surface-variant mt-2">Os melhores negócios em carros populares selecionados para você</p>
+</div>
+<button class="hidden md:flex items-center gap-2 text-secondary font-bold hover:text-on-secondary-container transition-colors group">
+                Ver todos <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Car Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Chevrolet Onix" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_3uXmJu_uRoLrQ-RLumEb7pdOnd7V3lRpablisddo80h3nOW3ZTQAwaldBr2JNqGpzexYztAyO8MjFvvn-EifWoMZ0IFjy-sUZvmaQ5mhNloqa_goo9--yjmXKRgUC9gXPTE93_NIiAE0bQiL8R1yClGIhO3f766WJ04jXhv8rrAM4HFvu_JhwAwb4RC7yGV31YiAIFB1lS6WeXEb4GhNSnbwMFNrqHvZAB3GkmsCp5JDF70GftPmkw">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">REPASSE</div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-sm font-bold text-primary mb-2">Chevrolet Onix 1.0 MT</h3>
+<p class="text-[24px] font-bold text-secondary mb-6">R$ 52.900</p>
+<div class="grid grid-cols-3 gap-3 border-t border-surface-container pt-6">
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">calendar_month</span>
+<span class="text-[11px] font-bold text-on-surface-variant">2019/20</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">speed</span>
+<span class="text-[11px] font-bold text-on-surface-variant">68k km</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">local_gas_station</span>
+<span class="text-[11px] font-bold text-on-surface-variant">Flex</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Car Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Hyundai HB20" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRhjJkdT9AEik3Sbh4RFJnHYqCutMDLOoT0DxeO17L9s8sTLNT9TiAo7XZ0EuogDSa_vVRG4-uxj6PSsPmoM9FAcQxZ6n2iFQRdyhz9cHfo-1lmMH4h9mtIjQWBVF111J6y6mwNp8F7TJXn7s-RW_wAgH96SVrYoaB-GDmH92K8RPlIFGgCbo9DWKEcyTw3bO1KEqTjBrQi8st_oR0luPUtFMIFcjwKZT3fiMIg8oY8i3HDDUnYPqntg">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">REPASSE</div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-sm font-bold text-primary mb-2">Hyundai HB20 Comfort</h3>
+<p class="text-[24px] font-bold text-secondary mb-6">R$ 54.500</p>
+<div class="grid grid-cols-3 gap-3 border-t border-surface-container pt-6">
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">calendar_month</span>
+<span class="text-[11px] font-bold text-on-surface-variant">2020/20</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">speed</span>
+<span class="text-[11px] font-bold text-on-surface-variant">55k km</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">local_gas_station</span>
+<span class="text-[11px] font-bold text-on-surface-variant">Flex</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Car Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Volkswagen Gol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl2Y5fe3W-Gq0TxArBNxhXvAV8qxG_8IwnJoJlyl9BJDPoZZS-gL_DerLereZgCgImVTrIlxEeg5hQTitUck7SoyoqsjXVT8qLVpcJoBlxP86d5EMmUERddEDgAGxXOhGBYCPA0GNIhE6AA30dfda8ITYnYQtsTNBV3MLQI8Qwnu3pT4CMr9WHmE1Okj8hloTIgezYKMqYMD2iOGHtNWtQdEiXYd8NvF51KGMN6OOklw6U61Fv44Y1bA">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">REPASSE</div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-sm font-bold text-primary mb-2">VW Gol 1.0 Trendline</h3>
+<p class="text-[24px] font-bold text-secondary mb-6">R$ 48.900</p>
+<div class="grid grid-cols-3 gap-3 border-t border-surface-container pt-6">
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">calendar_month</span>
+<span class="text-[11px] font-bold text-on-surface-variant">2018/19</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">speed</span>
+<span class="text-[11px] font-bold text-on-surface-variant">82k km</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">local_gas_station</span>
+<span class="text-[11px] font-bold text-on-surface-variant">Flex</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Car Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 overflow-hidden hover:shadow-xl transition-all duration-300 group md:hidden lg:block">
+<div class="relative h-56 overflow-hidden">
+<img alt="Fiat Uno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXHj_PuDyybMFQohOvQ1V0pv6tyV_AP9D80X5eGyqXurdYKQ75Z3AcQxTb2-g6dNeKoKP4Ke5REPC67FY9VeELkMU3OVT-T9rAVLewpK9Z2k6L6VXy901pUXo-OENYTwkbxABTZGMWwJu--6BrXjLtHrtOrbXVAU1R-VeKaHCSeYpnITFE1BRsy0879bQ8F9CombodAjxZHNKprL8OuNa75i9anskW-Dk_-ih3TEB8TWjr_W_uNvidNQ">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">REPASSE</div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-sm font-bold text-primary mb-2">Fiat Uno Attractive 1.0</h3>
+<p class="text-[24px] font-bold text-secondary mb-6">R$ 42.500</p>
+<div class="grid grid-cols-3 gap-3 border-t border-surface-container pt-6">
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">calendar_month</span>
+<span class="text-[11px] font-bold text-on-surface-variant">2017/18</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">speed</span>
+<span class="text-[11px] font-bold text-on-surface-variant">95k km</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">local_gas_station</span>
+<span class="text-[11px] font-bold text-on-surface-variant">Flex</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Car Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Ford Ka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeVCkKQVHCAtle77lLGH1Zur6R1zMYxaRV55RUxm5XBvxBQFmmiardhVF0jSi3lqhhBvA1bYQZxrT2pRTSOl456_hRpwQtqOqBULKk2W6kFzFeJJoiGkMltMpzrbhV0YacFedXYJBT6fKce77Z0covTNSX61FzfgCcD86LC6vjKsyjFaQS4gE8hbNm1SlrCVUszx5kR2LsBAFA5rx8Rx9PKZQ9F6jjiOMtSoa4cNFNcQ7eaOEqbgB1JQ">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">REPASSE</div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-sm font-bold text-primary mb-2">Ford Ka 1.0 SE</h3>
+<p class="text-[24px] font-bold text-secondary mb-6">R$ 46.900</p>
+<div class="grid grid-cols-3 gap-3 border-t border-surface-container pt-6">
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">calendar_month</span>
+<span class="text-[11px] font-bold text-on-surface-variant">2018/19</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">speed</span>
+<span class="text-[11px] font-bold text-on-surface-variant">75k km</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">local_gas_station</span>
+<span class="text-[11px] font-bold text-on-surface-variant">Flex</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Car Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Renault Sandero Stepway" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVi2R8Jv5ZL258_MSzv9zL9MiG-sgOwaYR9LRkN5QzP5IO5f2RuxyQ4-AmE7IciWUKtSN7-m5fl-0VdWU77cuEW19SYpl4i_BrHnm6O7wEObJ4E0ufxAirScagHEAdELSEtlHMjlGzXF2n83HJ6Rw1mEnxRqrEcEwnZTAN6Cpw6TpStGsDs7i0aUeCA438omYWjIjPlwYzp1nYHEs0g9WS6GCKYukiUOkdy7WnOeXaoHvvWxBHRxFfzw">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">REPASSE</div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-sm font-bold text-primary mb-2">Renault Sandero Stepway 1.6</h3>
+<p class="text-[24px] font-bold text-secondary mb-6">R$ 58.500</p>
+<div class="grid grid-cols-3 gap-3 border-t border-surface-container pt-6">
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">calendar_month</span>
+<span class="text-[11px] font-bold text-on-surface-variant">2017/18</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">speed</span>
+<span class="text-[11px] font-bold text-on-surface-variant">88k km</span>
+</div>
+<div class="flex flex-col items-center text-center bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-outline text-lg mb-1">local_gas_station</span>
+<span class="text-[11px] font-bold text-on-surface-variant">Flex</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-12 text-center md:hidden">
+<button class="w-full py-4 border-2 border-outline-variant text-primary font-bold rounded-lg hover:bg-surface-container-low transition-colors">
+                VER TODO O ESTOQUE
+            </button>
+</div>
+</section>
+<!-- Info & Contact Section -->
+<section class="bg-surface-container-low py-xl border-t border-outline-variant/30">
+<div class="max-w-[1280px] mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-xl">
+<div>
+<h2 class="text-[32px] font-bold text-primary mb-8">Visite Nossa Loja</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="bg-surface-container p-3 rounded-lg">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<p class="font-bold text-[11px] text-secondary uppercase tracking-widest mb-1">ENDEREÇO</p>
+<p class="text-body-md text-primary font-medium">Av. Cedro, 343.<br>Fazenda Rio Grande - PR</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-surface-container p-3 rounded-lg">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+</div>
+<div>
+<p class="font-bold text-[11px] text-secondary uppercase tracking-widest mb-1">HORÁRIO DE ATENDIMENTO</p>
+<p class="text-body-md text-primary font-medium">Segunda a Sexta: 09:00 às 18:00<br>Sábado: 10:00 às 16:00</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-surface-container p-3 rounded-lg">
+<span class="material-symbols-outlined text-secondary">badge</span>
+</div>
+<div>
+<p class="font-bold text-[11px] text-secondary uppercase tracking-widest mb-1">DADOS DA EMPRESA</p>
+<p class="text-body-md text-primary font-medium">CNPJ: 33.153.205/0001-66</p>
+</div>
+</div>
+</div>
+</div>
+<a class="min-h-[400px] rounded-xl overflow-hidden border border-outline-variant/50 relative bg-surface-dim group block shadow-lg" href="https://share.google/9aoyawSPdKNKBrf2V" rel="noopener noreferrer" target="_blank">
+<img alt="Mapa de Localização" class="absolute inset-0 w-full h-full object-cover opacity-30 grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-1bjXKxo1SZnC8JhyyO1X49jmO5XQ1oy1ybo1B1sw_5iyeU4ItR7-zOB-K3Ae-SjUYA34Bxdx-hBYwfsvcHEta1QofC9mJFKQWUOGSQsWEVGhBFVQRdRG2H5WT4F0tA3_e0JYLOn9RG6MfC2QDoWX_vw8A12_Fuq_zIsc_Y3ftrGFRXDADDj0mp6OxsgYvGkKGfKdarYFME3KaxFT5OxbUV9oJ8IbTGWAfBajRlnERmRco1VhWcXtVQ">
+<div class="absolute inset-0 flex items-center justify-center flex-col bg-primary/20 group-hover:bg-transparent transition-colors duration-500">
+<div class="bg-surface-container-lowest p-5 rounded-full shadow-2xl mb-6 transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl">location_on</span>
+</div>
+<span class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold text-body-md shadow-xl transition-all duration-300">VER NO GOOGLE MAPS</span>
+</div>
+<div class="absolute bottom-6 left-6 bg-surface-container-lowest/95 p-4 rounded-lg border border-outline-variant/30 shadow-md">
+<p class="text-sm font-bold text-primary">Av. Cedro, 343</p>
+<p class="text-xs text-on-surface-variant">Fazenda Rio Grande - PR</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-xl bg-primary text-on-primary">
+<div class="max-w-[1280px] mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="text-center md:text-left">
+<span class="text-headline-md font-bold text-on-primary block mb-4">Aguia Repasses</span>
+<p class="text-body-sm text-outline-variant leading-relaxed max-w-sm">
+                    © 2026 Aguia Repasses. Todos os direitos reservados. 
+                    <span class="block mt-1 font-semibold">CNPJ: 33.153.205/0001-66</span>
+</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-3">
+<a class="text-outline-variant hover:text-secondary font-medium text-body-sm transition-colors" href="#">Av. Cedro, 343, Fazenda Rio Grande - PR</a>
+<a class="text-outline-variant hover:text-secondary font-medium text-body-sm transition-colors" href="#">Termos de Uso</a>
+<a class="text-outline-variant hover:text-secondary font-medium text-body-sm transition-colors" href="#">Política de Privacidade</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp CTA -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center gap-2 hover:bg-[#128C7E] transition-all duration-300 z-50 group" href="https://chat.whatsapp.com/FXFo03n8ZCLBUASq3CZSWO?s=sw&amp;p=a&amp;ilr=0">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+<span class="font-bold text-body-md max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap opacity-0 group-hover:opacity-100 pr-2">Fale Conosco</span>
+</a>
+
+
+</body></html>
